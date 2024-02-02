@@ -1,11 +1,14 @@
 .resizeable-windows-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
     height: 100vh;
   }
   
   .resizeable-window {
+    width: 100%;
+    margin: 10px;
     border: 1px solid #ddd;
     overflow: hidden;
   }
@@ -14,11 +17,11 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
     border: 1px solid black;
-   
   }
   
   .react-resizable-handle {
@@ -26,27 +29,31 @@
     width: 10px;
     height: 10px;
   }
-  #input{
+  
+  #input {
     height: 40px;
-    width: 250px;
+    width: 100%;
     border: none;
     padding-left: 15px;
-    
+    margin-bottom: 10px;
   }
-  button{
+  
+  button {
     border: 1px solid navy;
     background-color: navy;
     height: 42px;
-    width: 160px;
+    width: 100%;
     color: #fff;
   }
+  
   .task-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
   }
   
-  .task-table th, .task-table td {
+  .task-table th,
+  .task-table td {
     border: 1px solid black;
     padding: 8px;
     text-align: left;
@@ -55,3 +62,25 @@
   .task-row:hover {
     background-color: #f2f2f2;
   }
+  
+  @media (min-width: 600px) {
+
+    .resizeable-window {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (min-width: 768px) {
+
+    .resizeable-window {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
+  @media (min-width: 1200px) {
+
+    .resizeable-window {
+      width: calc(25% - 20px);
+    }
+  }
+  

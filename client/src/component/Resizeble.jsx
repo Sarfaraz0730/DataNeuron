@@ -42,7 +42,7 @@ const ResizeableWindows = () => {
 
       setEditDescription('');
       setEditingTaskId(null);
-      setSavedTaskId(_id); // Set the savedTaskId to trigger UI changes
+      setSavedTaskId(_id); 
     } catch (error) {
       console.error('Error editing task:', error);
     }
@@ -67,7 +67,7 @@ const ResizeableWindows = () => {
 
   return (
     <div className="resizeable-windows-container">
-      {/* Window 1 */}
+   
       <Rnd
         default={{
           x: 0,
@@ -80,7 +80,7 @@ const ResizeableWindows = () => {
         <div className="window-content">Window 1</div>
       </Rnd>
 
-      {/* Window 2 */}
+   
       <Rnd
         default={{
           x: 0,
@@ -142,7 +142,7 @@ const ResizeableWindows = () => {
         </div>
       </Rnd>
 
-      {/* Window 3 */}
+    
       <Rnd
         default={{
           x: 0,
