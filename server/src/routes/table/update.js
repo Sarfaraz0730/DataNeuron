@@ -2,11 +2,13 @@ const express = require("express");
 const addTableDataModel = require("../../model/addTableDataModel");
 const router = express.Router();
 
-router.patch("/", async (req, res) => {
+router.patch("/:_id", async (req, res) => {
+    const _id = req.params
+    console.log("_id",_id,)
     try {
         const data = req.body;
         const description =data.description;
-        const _id =data._id
+        // const _id =data._id
    
 
         const existingData = await addTableDataModel.findById(_id);

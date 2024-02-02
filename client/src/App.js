@@ -1,10 +1,12 @@
 
 import './App.css';
+import Resizeble from './component/Resizeble';
 
 function App() {
   return (
     <div className="App">
-     <h1>Hello</h1>
+   
+     <Resizeble/>
     </div>
   );
 }

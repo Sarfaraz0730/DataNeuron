@@ -1,0 +1,57 @@
+.resizeable-windows-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .resizeable-window {
+    border: 1px solid #ddd;
+    overflow: hidden;
+  }
+  
+  .window-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+   
+  }
+  
+  .react-resizable-handle {
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+  }
+  #input{
+    height: 40px;
+    width: 250px;
+    border: none;
+    padding-left: 15px;
+    
+  }
+  button{
+    border: 1px solid navy;
+    background-color: navy;
+    height: 42px;
+    width: 160px;
+    color: #fff;
+  }
+  .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .task-table th, .task-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .task-row:hover {
+    background-color: #f2f2f2;
+  }
